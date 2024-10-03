@@ -1,10 +1,14 @@
 import { Client, Account } from 'appwrite';
 
+
 const client = new Client();
 
+const url = import.meta.env.VITE_APPWRITE_URL
+const apiKey = import.meta.env.VITE_PROJECT_ID
+
 client
-    .setEndpoint('https://cloud.appwrite.io/v1')
-    .setProject('66d598020027f7ae5098');
+    .setEndpoint(url)
+    .setProject(apiKey);
 
 export const account = new Account(client)
 
