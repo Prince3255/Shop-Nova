@@ -13,7 +13,7 @@ const SplashScreen = ({ onanimationend }) => {
     // If the width is greater than the threshold, do not play the animation
     if (currentWidth <= widthThreshold) {
       // onanimationend(); // Call the end function directly if width exceeds threshold
-      return;
+      // return;
     }
 
     const h1 = document.querySelector('.splashScreen h1');
