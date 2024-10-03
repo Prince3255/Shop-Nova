@@ -29,7 +29,7 @@ const Login = () => {
   return (
 
     <div className='min-h-screen w-full bg-gray-100 flex justify-center items-center'>
-        <div className='w-4/12 shadow-lg h-5/6 bg-white p-4'>
+        <div className='w-[95%] vv:w-[90%] vd:w-[80%] vp:w-[60%] ml:w-4/12 shadow-lg h-5/6 bg-white p-4'>
         <h2 className='font-bold text-center text-2xl'>Login to Your Account</h2>
         <form className='space-y-8 mt-4' ref={login} onSubmit={handleSubmit}>
             <div className='rounded-md shadow-sm'>
