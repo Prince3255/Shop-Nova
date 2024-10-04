@@ -58,6 +58,11 @@ const Header = () => {
               </button>
               <nav className='min-h-screen'>
                 <ul className='space-y-8'>
+                {user ? (
+                    <span className='text-sm font-medium block text-center md:hidden'>Hello, {user.name}</span>
+                ) : (
+                  <Link to="/login" className='text-sm block text-center md:hidden bg-blue-500 hover:bg-blue-600 px-2 py-1 rounded-md'>Login</Link>
+                )}
                   <li>
                     <NavLink to="/" className={({isActive}) => (isActive ? 'bg-emerald-500 px-3 py-1.5 rounded-xl' : 'hover:underline underline-offset-[3px]')}>
                       Home
