@@ -453,7 +453,7 @@ const Home = () => {
                       {option?.deal_title}
                     </p>
                     <p className='mt-2 flex items-center'>
-                      <span className='text-xs text-[#168342]'>&nbsp;{option?.deal_badge ? (option?.deal_badge) : (option?.savings_percentage) %off}</span>
+                      <span className='text-xs text-[#168342]'>&nbsp;{option?.deal_badge ? (option?.deal_badge) : `${option?.savings_percentage}% off`}</span>
                     </p>
                     <div className='text-sm vv:text-base space-x-2 my-1'>
                       <span>{option?.deal_price?.amount}</span>
