@@ -8,7 +8,8 @@ const ECOMMERCEAPI = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: 'https://real-time-amazon-data.p.rapidapi.com',
         prepareHeaders: (headers) => {
-            if (apiKey) {
+            if (apiKey) { 
+                
                 headers.set('x-rapidapi-key', apiKey);
             }
             else {
